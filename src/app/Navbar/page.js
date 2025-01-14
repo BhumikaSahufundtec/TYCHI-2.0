@@ -1,10 +1,36 @@
+"use client";
+
 export default function Navbar() {
-    return (
-      <section className="flex items-center justify-center min-h-screen">
-        <div>
-          <h1 className="text-4xl font-bold text-center">Navbar</h1>
-        </div>
-      </section>
-    );
-  }
-  
+  return (
+    <nav className="bg-gray-800 p-4 text-white">
+      <ul className="flex justify-center space-x-4">
+       
+        <li>
+          <a href="/dashboard" className="hover:underline">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="/trades" className="hover:underline">
+            Trades
+          </a>
+        </li>
+        <li>
+          <a href="/reports" className="hover:underline">
+            Reports
+          </a>
+        </li>
+        <li>
+          <a href="/settings" className="hover:underline">
+            Settings
+          </a>
+        </li>
+        <li>
+          <a href="/profile" className="hover:underline">
+            Profile
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+}
